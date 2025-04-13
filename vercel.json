@@ -1,0 +1,11 @@
+{
+    "trailingSlash": false,
+    "cleanUrls": true,
+    "rewrites": [
+      { "source": "/poems/:path*", "destination": "/poems/:path*" }
+    ],
+    "routes": [
+      { "handle": "filesystem" },
+      { "src": "/poems/(.*)", "dest": "/poems/$1" }
+    ]
+  }
